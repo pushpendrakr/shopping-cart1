@@ -1,7 +1,7 @@
 const Sequelize=require('sequelize')
 const db=new Sequelize('shopdb','root','Indra@2000',
 {
-host:'localhost',
+host:'0.0.0.0',
 dialect:'mysql',
 pool: {
     min: 0, max: 5,
