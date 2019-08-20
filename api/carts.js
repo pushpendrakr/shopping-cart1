@@ -12,7 +12,7 @@ $(function(){
         <div class="col m-3 p-3">
         <b>Rs. ${product.price}</b>
         </div>
-        <button value=${product.id} class="col btn btn-primary m-3 remove"> remove</button>
+        <a href=" "><button value=${product.id} class="btn btn-primary m-3 remove">remove</button></a>
         </div>
         </div></div>`)}
         $('.remove').each(function() {
