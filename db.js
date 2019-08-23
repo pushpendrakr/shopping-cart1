@@ -1,7 +1,7 @@
 const Sequelize=require('sequelize')
-const db=new Sequelize('shopdb','root','Indra@2000',
+const db=new Sequelize('sql12302745','sql12302745','cxPyF4CgJS',
 {
-host:'0.0.0.0',
+host:'sql12.freemysqlhosting.net',
 dialect:'mysql',
 pool: {
     min: 0, max: 5,
@@ -51,4 +51,3 @@ pool: {
 
                 exports=module.exports={User,Product,cart}  
                 
-00
