@@ -5,9 +5,8 @@ host:'0.0.0.0',
 dialect:'mysql',
 pool: {
     min: 0, max: 5,
-}
 
-})
+}})
 
     const User=db.define('users2',
    { id:{type:Sequelize.INTEGER,
@@ -48,7 +47,7 @@ pool: {
             db.sync()
             .then(()=>{
                 console.log("database synced")})
-                .catch((err)=>{console.log("error in syncing db")})
+                .catch((err)=>{console.log(err)})
 
                 exports=module.exports={User,Product,cart}  
                 
