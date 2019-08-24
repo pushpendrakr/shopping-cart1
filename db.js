@@ -44,7 +44,7 @@ pool: {
             defaultValue:0.0}})
         const cart=db.define('cart',{
             id:{ type:Sequelize.INTEGER,
-                
+                allowNull:false,
                 primaryKey:true,
                 
             },

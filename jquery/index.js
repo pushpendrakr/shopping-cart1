@@ -25,6 +25,7 @@ fetchProducts(function(products){
             $.post(
                 'api/products/addtocart',
                 {
+                    id:product.id,
                    name:product.name,
                    manufacturer:product.manufacturer,
                    price:product.price
