@@ -1,3 +1,4 @@
+const mysql2=require('mysql2')
 const Sequelize=require('sequelize')
 const db=new Sequelize('sql12302745','sql12302745','cxPyF4CgJS',
 {
