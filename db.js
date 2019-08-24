@@ -1,14 +1,26 @@
 const mysql2=require('mysql2')
 const Sequelize=require('sequelize')
-const db=new Sequelize('sql12302745','sql12302745','cxPyF4CgJS',
+
+// let databasename='shopdb'
+// let user='root'
+// let password='Indra@2000'
+// let server='localhost'
+
+
+
+let databasename='sql12302745'
+let user='sql12302745'
+let password='cxPyF4CgJS'
+let server='sql12.freemysqlhosting.net'
+
+const db=new Sequelize(databasename,user,password,
 {
-host:'sql12.freemysqlhosting.net',
+host:server,
 dialect:'mysql',
 pool: {
     min: 0, max: 5,
 
 }})
-
     const User=db.define('users2',
    { id:{type:Sequelize.INTEGER,
         autoIncrement:true,
