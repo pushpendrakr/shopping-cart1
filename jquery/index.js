@@ -19,11 +19,11 @@ fetchProducts(function(products){
         $(this).click( function() {
         var id=$(this).val()
         $.get(
-            'products/findproduct',
+            'api/products/findproduct',
             {id:id},
             function(product){
             $.post(
-                'products/addtocart',
+                'api/products/addtocart',
                 {
                    name:product.name,
                    manufacturer:product.manufacturer,
