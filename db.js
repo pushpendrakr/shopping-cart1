@@ -1,8 +1,8 @@
 const mysql2=require('mysql2')
 const Sequelize=require('sequelize')
-const db=new Sequelize('sql12302745','sql12302745','cxPyF4CgJS',
+const db=new Sequelize('shopdb','root','Indra@2000',
 {
-host:'sql12.freemysqlhosting.net',
+host:'localhost',
 dialect:'mysql',
 pool: {
     min: 0, max: 5,
