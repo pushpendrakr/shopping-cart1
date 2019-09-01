@@ -21,13 +21,17 @@ pool: {
     min: 0, max: 5,
 
 }})
-    const User=db.define('users2',
+    const User=db.define('users4',
    { id:{type:Sequelize.INTEGER,
         autoIncrement:true,
         primaryKey:true},
 
-    name:{type:Sequelize.STRING,
-          allowNull:false}})
+    username:{type:Sequelize.STRING,
+          allowNull:false},
+    password:{type:Sequelize.STRING},
+    firstname:{type:Sequelize.STRING},
+    lastname:{type:Sequelize.STRING}
+        })
     
     const Product=db.define('products3',{
         id:{ type:Sequelize.INTEGER,
