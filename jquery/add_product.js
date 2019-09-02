@@ -6,7 +6,7 @@ let productprice=$('#productPrice')
 $('#btnProductAdd').click(function(){
 addProduct(productname.val(),productManufacturer.val(),productprice.val(),
     function(addedproduct){
-        window.alert("Added "+ addedproduct.name+" to Database")
+        window.alert("Added "+ addedproduct.name+" to shop")
     })
 })
 

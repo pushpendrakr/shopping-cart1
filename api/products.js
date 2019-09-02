@@ -13,13 +13,21 @@ route.get('/carts',(req,res)=>{
         res.status(200).send(products)})
         .catch((err)=>{res.status(500).send({error:"could not display products"} )})
 })
-route.delete('/remove',(req,res)=>{
+route.delete('/removecart',(req,res)=>{
      cart.destroy({
          where:{
              id:req.body.id
          }
      }).then(()=>{res.send()})    
      .catch((err)=>{console.log(err)})
+})
+route.delete('/removeshop',(req,res)=>{
+    Product.destroy({
+        where:{
+            id:req.body.id
+        }
+    }).then(()=>{res.send()})    
+    .catch((err)=>{console.log(err)})
 })
 route.get('/findproduct',(req,res)=>{
         Product.findOne({

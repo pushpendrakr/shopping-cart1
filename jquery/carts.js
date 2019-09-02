@@ -20,7 +20,7 @@ $(function(){
                 console.log("clicked")
             var id=$(this).val()
           $.ajax({
-              url:'/api/products/remove',
+              url:'/api/products/removecart',
               type:"DELETE",
               data:{id:id},
               success:function(){

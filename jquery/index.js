@@ -12,24 +12,19 @@ fetchProducts(function(products){
     <div class="col m-3 p-3">
     <b>Rs. ${product.price}</b>
     </div>
-    <button value=${product.id} class="col btn btn-primary m-3 cart-btn"> AddToCart</button>
+    <a href=" "> <button value=${product.id} class="btn btn-primary m-3 remove"> remove</button></a>
     </div>
     </div></div>`)} 
-    $('.cart-btn').each(function() {
-        $(this).click( function() {
-        var id=$(this).val()
-        $.get(
-            'api/products/findproduct',
-            {id:id},
-            function(product){
-            $.post(
-                'api/products/addtocart',
-                {
-                    id:product.id,
-                   name:product.name,
-                   manufacturer:product.manufacturer,
-                   price:product.price
-                },
-                function(products){
-                    window.alert(products.name+" added to cart")})
-            })})} )} ) } )
+    $('.remove').each(function() {
+                $(this).click( function() {
+                    console.log("clicked")
+                var id=$(this).val()
+              $.ajax({
+                  url:'/api/products/removeshop',
+                  type:"DELETE",
+                  data:{id:id},
+                  success:function(){
+                      window.alert(" deleted")
+                  }
+              })
+            } )} )} ) } )
