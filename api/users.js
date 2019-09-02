@@ -8,7 +8,7 @@ User.findAll()
 })
 .catch((err)=>{
     res.status(500).send({err})})})
-    route.post('/login', passport.authenticate('local', {
+route.post('/login', passport.authenticate('local', {
         failureRedirect: '/views/sitemanager',
         successRedirect: '/../views/add_product.html'
     }))
