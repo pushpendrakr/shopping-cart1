@@ -9,15 +9,15 @@ let password=('#password')
 submitbtn.click(function(e){
   form.validate({
     rules:{
+      username:'required',
      firstname:'required',
      lastname:'required',
      password:{
-       required:'true',
+       required:true,
        minlength:8,}
     },
     messages:{
-      firstname:'This field is required',
-      lastname:'This field is required',
+     
       password:{
         minlength:'password must be 8 characters long'
       }

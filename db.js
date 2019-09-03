@@ -7,11 +7,15 @@ const Sequelize=require('sequelize')
 // let server='localhost'
 
 
-
-let databasename='sql12302745'
-let user='sql12302745'
-let password='cxPyF4CgJS'
-let server='sql12.freemysqlhosting.net'
+let databasename='Sb03f8qhUU'
+let user='Sb03f8qhUU'
+let password='qKrZRHGDiT'
+let server='remotemysql.com'
+Port: 3306
+// let databasename='sql12302745'
+// let user='sql12302745'
+// let password='cxPyF4CgJS'
+// let server='sql12.freemysqlhosting.net'
 
 const db=new Sequelize(databasename,user,password,
 {
