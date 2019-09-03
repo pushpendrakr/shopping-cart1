@@ -25,6 +25,4 @@ fetchProducts(function(products){
                   data:{id:id},
                   success:function(){
                       window.alert(" deleted")
-                  }
-              })
-            } )} )} ) } )
+                  }})})})})})
