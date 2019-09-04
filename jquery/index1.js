@@ -20,11 +20,11 @@ $(function(){
             $(this).click( function() {
             var id=$(this).val()
             $.get(
-                'api/products/findproduct',
+                '/api/products/findproduct',
                 {id:id},
                 function(product){
                 $.post(
-                    'api/products/addtocart',
+                    '/api/products/addtocart',
                     {
                         id:product.id,
                        name:product.name,
