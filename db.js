@@ -36,6 +36,15 @@ pool: {
     firstname:{type:Sequelize.STRING},
     lastname:{type:Sequelize.STRING}
         })
+    const facebook=db.define('user5',
+   { id:{type:Sequelize.INTEGER,
+    autoIncrement:true,
+    primaryKey:true},
+    token:{type:Sequelize.STRING},
+    email:{type:Sequelize.STRING},
+    name:{type:Sequelize.STRING}
+}
+    )
     
     const Product=db.define('products3',{
         id:{ type:Sequelize.INTEGER,
@@ -70,5 +79,5 @@ pool: {
                 console.log("database synced")})
                 .catch((err)=>{console.log(err)})
 
-                exports=module.exports={User,Product,cart}  
+                exports=module.exports={User,Product,cart,facebook}  
                 
