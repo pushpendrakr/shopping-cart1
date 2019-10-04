@@ -24,7 +24,7 @@ app.use('/views/add_product.html',(req,res)=>{
 })
 app.get('/auth/facebook', passport.authenticate('facebook',{scope:['email']}));
 app.get('/auth/facebook/callback',passport.authenticate('facebook', {   
-                                        successRedirect: '/',
+                                        successRedirect: '/views/client',
                                         failureRedirect: '/' }));
 app.listen(process.env.PORT||1234,()=>{console.log('server started ')})
 
