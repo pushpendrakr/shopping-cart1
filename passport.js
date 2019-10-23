@@ -35,7 +35,7 @@ return done(null, user)
 passport.use(new FacebookStrategy({
     clientID:'489607711623210',
     clientSecret: '3783eb711dcfe58b3a8487db8ec3bf3a',
-    callbackURL: "http://shopcart14.herokuapp.com/auth/facebook/callback"
+    callbackURL: "https://shopcart14.herokuapp.com/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     console.log("here")  
