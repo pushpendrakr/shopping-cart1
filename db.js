@@ -5,12 +5,19 @@ const Sequelize=require('sequelize')
 // let user='root'
 // let password='Indra@2000'
 // let server='localhost'
+//  Port: 3306
 
-
-let databasename='Sb03f8qhUU'
-let user='Sb03f8qhUU'
-let password='qKrZRHGDiT'
+// let databasename='Sb03f8qhUU'
+// let user='Sb03f8qhUU'
+// let password='qKrZRHGDiT'
+// let server='remotemysql.com'
+let databasename='kbImIHgJOq'
+let user='kbImIHgJOq'
+let password='ED9wraVcyt'
 let server='remotemysql.com'
+
+
+
 Port: 3306
 // let databasename='sql12302745'
 // let user='sql12302745'
