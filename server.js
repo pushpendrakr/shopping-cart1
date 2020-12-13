@@ -3,14 +3,22 @@ const session=require('express-session')
 const passport=require('./passport')
 const app=express()
 app.set("view engine","hbs")
+
+//allows us to access body of post request
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
+
+
 app.use(session({
     secret:'secret'
 }))
 app.use(passport.initialize())
 app.use(passport.session())
+
+//telling express where static files are located
 app.use('/',express.static(__dirname))
+
+
 app.use('/api',require('./api/hello').route)
 
 app.use('/views/sitemanager',(req,res)=>{
