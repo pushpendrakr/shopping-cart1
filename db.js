@@ -11,15 +11,12 @@ const Sequelize=require('sequelize')
 // let user='Sb03f8qhUU'
 // let password='qKrZRHGDiT'
 // let server='remotemysql.com'
-<<<<<<< HEAD
 let databasename='0uOaJ2YSto'
 let user='0uOaJ2YSto'
 let password='iDMpTekjLS'
-=======
-let databasename='CeebVsCoGW'
-let user='CeebVsCoGW'
-let password='byu1ZblmC5'
->>>>>>> 6bf5c52004dad13263b0b728cb61d2b9f119ea8f
+// let databasename='CeebVsCoGW'
+// let user='CeebVsCoGW'
+// let password='byu1ZblmC5'
 let server='remotemysql.com'
 
 
