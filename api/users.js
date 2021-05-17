@@ -12,9 +12,10 @@ route.post('/login/', passport.authenticate('local', {
         failureRedirect: '/views/sitemanager',
         successRedirect: '/../views/agent.html'
     }))
-    route.get('/views/sitemanager',(req,res)=>{
+    
+route.get('/views/sitemanager',(req,res)=>{
         res.render('sitemanager')
-    })
+})
     
 route.post('/',(req,res)=>{
        User.create({
